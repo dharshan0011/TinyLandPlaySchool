@@ -1,0 +1,23 @@
+{
+  "name": "tinyland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharshan0011/TinyLandPlaySchool.git"
+  },
+  "keywords": [
+    "tinyland",
+    "playschool"
+  ],
+  "author": "Dharshan K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharshan0011/TinyLandPlaySchool/issues"
+  },
+  "homepage": "https://github.com/dharshan0011/TinyLandPlaySchool#readme"
+}
