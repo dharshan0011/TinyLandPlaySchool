@@ -9,27 +9,31 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- googlefonts -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400i|Open+Sans:600|Roboto+Slab:700|Ubuntu:700&display=swap"
+    rel="stylesheet">
+
   <!-- custom css -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+<script src="/index.js"></script>
 
 <body>
-  <nav>
+  <section id="home">
+    <nav id="nav-bar">
 
-    <img src="images/logo.png" class="hidden" alt="TinyLand" width="60px" height="60px" id="mob-logo">
-    <a href="" id="admission" class="hidden">admission</a>
-    <input type="checkbox" name="" id="check" class="hidden">
-    <label for="check" class="check-btn hidden"><i class="fas fa-bars"></i></label>
+      <img src="images/logo.png" class="hidden" alt="TinyLand" width="60px" height="60px" id="mob-logo">
+      <a href="" id="admission" class="hidden">admission</a>
+      <input type="checkbox" name="" id="check" class="hidden">
+      <label for="check" class="check-btn hidden"><i class="fas fa-bars"></i></label>
 
-    <ul>
-      <li><a href="#">home</a></li>
-      <li><a href="">programs</a></li>
-      <li><a href="" class="admission">admission</a></li>
-      <li><a href="" id="logo"><img src="images/logo.png" alt="TinyLand" class="logo"></a></li>
-      <li><a href="">about us</a></li>
-      <li><a href="">contact us</a></li>
-      <li><a href=""><i class="fas fa-phone-alt"></i> 8867407455</a></li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="">programs</a></li>
+        <li><a href="/admission" class="admission">admission</a></li>
+        <li><a href="" id="logo"><img src="images/logo.png" alt="TinyLand" class="logo"></a></li>
+        <li><a href="">about us</a></li>
+        <li><a href="#contact-us">contact us</a></li>
+        <li><a href=""><i class="fas fa-phone-alt"></i> 8867407455</a></li>
+      </ul>
+    </nav>

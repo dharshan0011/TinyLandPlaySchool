@@ -1,0 +1,66 @@
+<%- include("partials/header") -%>
+<style>
+    nav {
+        background-color: rgba(63, 178, 207, 62%);
+    }
+
+    #home {
+        background-image: url("/images/bg-ad.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    footer{
+        background-color: #FFC30D;
+    }
+    nav ul li a:not(#logo):hover {
+    background-color:#FFC30D;
+    color: white;
+    text-decoration: none;
+}
+.admission:hover{
+    border: 3px solid #FFC30D;
+}
+    @media only screen and (max-width: 600px) {
+    #home{
+        background-image:url("/images/bg-ad-mobile.png")
+    }
+   
+    }
+</style>
+<section id="admission-section">
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email">
+        </div>
+        <div class="form-group">
+            <label for="mob">Mobile</label>
+            <input type="text" name="" id="mob">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="" id="age">
+        </div>
+        <div class="form-group">
+            <label for="program">Program</label>
+            <select name="program">
+                <option value="Playgroup">Playgroup</option>
+                <option value="Nursery">Nursery</option>
+                <option value="LKG">LKG</option>
+                <option value="UKG">UKG</option>
+                <option value="Daycare">Daycare</option>
+            </select>
+        </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</section>
+
+<%- include("partials/footer") -%>
