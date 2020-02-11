@@ -48,11 +48,27 @@ nav ul li a:not(#logo):hover {
     text-decoration: none;
 }
 
-.sticky {
-    position: fixed;
+.sticky{
+    position:fixed;
     top: 0;
     width: 100%;
     z-index: 999999;
+}
+.nav-style{
+    background-color:#CAC8C9;
+    padding-top: 10px;
+    height: 4rem;
+}
+.nav-style .logo{
+    height: 3rem;
+    width: 3rem;  
+}
+.nav-style ul li a{
+    color:white;
+    font-size: 0.8rem;
+}
+.nav-style .admission{
+        border: 3px solid white;
 }
 
 .logo {
@@ -92,17 +108,12 @@ nav ul li a:not(#logo):hover {
     line-height: 100vh;
 }
 
-@keyframes jump {
-    from {
-        bottom: 30px;
-    }
-
-    to {
-        bottom: 80px;
-    }
+@keyframes jump{
+    from{bottom: 30px;}
+    to{bottom:80px;}
 }
 
-#scroll-up {
+#scroll-up{
     position: absolute;
     bottom: 30px;
     left: calc((100% - 56px)/2);
@@ -129,7 +140,7 @@ nav ul li a:not(#logo):hover {
     color: #4D4D4D;
 }
 
-.heading {
+.heading{
     color: #3FB2CF;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 5vh;
@@ -184,8 +195,8 @@ nav ul li a:not(#logo):hover {
 }
 
 /* ---------------------over-riding bootstrap -------------------------*/
-.card-group>.card:not(:last-child),
-.card-group>.card:not(:first-child) {
+ .card-group>.card:not(:last-child),
+ .card-group>.card:not(:first-child) {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -202,105 +213,94 @@ nav ul li a:not(#logo):hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-#contact-us .card-group {
+#contact-us .card-group{
     margin-top: 10vh;
 }
-
-#contact-us .card-group .card {
+#contact-us .card-group .card{
     border: none;
     background-color: transparent;
 }
-
 #contact-us .card-group .card img {
     margin: 0 auto 0 auto;
     height: 4rem;
 }
-
-#contact-us .admission-btn {
+#contact-us .admission-btn{
     margin: 5vh auto 6vh auto;
-    display: block;
-    color: #3FB2CF;
+    display:block;
+    color:#3FB2CF;
     padding: 5px 8px;
-    border: 3px solid #3FB2CF;
-    border-radius: 20px;
+    border:3px solid #3FB2CF;
+    border-radius:20px;
     width: fit-content;
     text-decoration: none;
     font-weight: bold;
 }
-
-#contact-us .admission-btn:hover {
-    background-color: #3FB2CF;
+#contact-us .admission-btn:hover{
+    background-color:#3FB2CF;
     color: white;
 }
-
-#contact-us i:hover {
+#contact-us i:hover{
     color: #3FB2CF;
 }
 
-#contact-us .card-content {
+#contact-us .card-content{
     margin-bottom: 5px;
-    color: #4D4D4D;
+    color:#4D4D4D;
     font-family: 'Open Sans', sans-serif;
 }
-
-.fa-chevron-up {
+.fa-chevron-up{
     font-size: 3.5rem;
-    color: #FFC30D;
+    color:#FFC30D;
 }
 
 
 
 /* ---------------------footer ----------------*/
-footer {
+footer{
     padding: 17px 0 7px 0;
     background-color: #3FB2CF;
-    color: white;
+    color:white;
 }
 
-footer h3 {
+footer h3{
     font-size: 1.4rem;
-
+  
 }
 
-footer i {
+footer i{
     font-size: 2rem;
     margin: 0 10px;
 }
 
 /* ------------------------admission-page --------------------*/
-form {
+form{
     font-family: 'Open Sans', sans-serif;
     background-color: white;
-    color: #3FB2CF;
+    color:#3FB2CF;
     border-radius: 30px;
-    display: inline-block;
+    display:inline-block;
     padding: 4rem 3rem;
     font-weight: bolder;
 }
-
-button {
-    float: right;
+button{
+    float:right;
     border: 2px solid #FFC30D;
     border-radius: 30px;
-    color: #FFC30D;
+    color:#FFC30D;
     background-color: white;
     padding: 5px 10px;
 }
-
-button:hover {
-    background-color: #FFC30D;
+button:hover{
+    background-color:#FFC30D;
     color: white;
 }
-
-input,
-select {
+input,select{
     border: 2px solid #3FB2CF;
     border-radius: 30px;
     padding: 5px 10px;
 }
 
-#admission-section {
+#admission-section{
     padding: 19vh 0 18vh 10%;
 }
 
@@ -311,8 +311,7 @@ select {
     text-align: center;
     padding: 29vh 0;
 }
-
-.flip-card {
+ .flip-card{
     color: #263137;
     text-align: center;
     display: inline-block;
@@ -322,39 +321,37 @@ select {
     height: 200px;
     background-color: transparent;
 }
-
-.card-inner {
+ .card-inner{
     position: relative;
-    width: 100%;
+    width:100%;
     height: 100%;
-    text-align: center;
+    text-align:center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .card-inner {
+ .flip-card:hover .card-inner{
     transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.card-front, .card-back{
     border-radius: 15px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height:100%;
     backface-visibility: hidden;
 }
 
-.card-front {
+.card-front{
     background: #263137;
     color: white;
     padding-top: 77px;
 }
 
-.card-back {
-    transform: rotateY(180deg);
+.card-back{
+    transform:rotateY(180deg);
     background-color: dodgerblue;
-    color: white;
+    color:white;
     padding: 20px 10px;
 }
 
