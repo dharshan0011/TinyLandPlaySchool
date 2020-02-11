@@ -14,8 +14,11 @@ app.get("/", function (req, res) {
 app.get("/test", function (req, res) {
     res.render("test.ejs");
 });
-app.get("/admission", function(req,res){
+app.get("/admission", function (req, res) {
     res.render("admission.ejs");
+});
+app.get("/programs", function (req, res) {
+    res.render("programs.ejs");
 });
 
 app.listen(3000, function () {
