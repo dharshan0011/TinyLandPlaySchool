@@ -267,9 +267,10 @@ footer h3{
   
 }
 
-footer i{
+footer a i{
     font-size: 2rem;
     margin: 0 10px;
+    color: white;
 }
 
 /* ------------------------admission-page --------------------*/
@@ -298,6 +299,11 @@ input,select{
     border: 2px solid #3FB2CF;
     border-radius: 30px;
     padding: 5px 10px;
+    outline:0;
+}
+
+#success{
+    display:none;
 }
 
 #admission-section{
@@ -309,13 +315,17 @@ input,select{
 
 #programs {
     text-align: center;
-    padding: 29vh 0;
+    padding: 11vh 0;
+}
+
+.cards{
+    margin: 15vh 0;
 }
  .flip-card{
     color: #263137;
     text-align: center;
     display: inline-block;
-    margin: 20px 20px;
+    margin: 22px 22px;
     perspective: 1000px;
     width: 300px;
     height: 200px;
@@ -355,8 +365,19 @@ input,select{
     padding: 20px 10px;
 }
 
+/* -------------------------------about-us ---------------------------*/
 
+#about {
+    text-align: center;
+    padding: 12vh 10%;
+}
 
+.about-content{
+    margin: 11vh 0 28vh 0;
+    font-weight: bold;
+    color:#263137;
+    text-align: justify;
+}
 
 
 
