@@ -503,5 +503,8 @@ input,select{
     #our-vision {
         padding-bottom: 100px;
     }
+    #admission-section{
+        padding: 10vh 10% 10vh 10%;
+    }
 
 }
