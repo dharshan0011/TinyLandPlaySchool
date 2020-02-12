@@ -105,7 +105,7 @@ nav ul li a:not(#logo):hover {
 #main {
     text-align: center;
     height: 100vh;
-    line-height: 100vh;
+    line-height: 80vh;
 }
 
 @keyframes jump{
@@ -119,6 +119,7 @@ nav ul li a:not(#logo):hover {
     left: calc((100% - 56px)/2);
     color: white;
     font-size: 3.5rem;
+    z-index: 2;
     animation-name: jump;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -435,6 +436,7 @@ input,select{
         background-color: #3FB2CF;
         top: 80px;
         left: -100%;
+        z-index: 3;
         text-align: center;
         transition: all 0.5s;
     }
@@ -449,13 +451,17 @@ input,select{
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 25px;
         color: white;
         width: 200px;
     }
 
     nav ul li a:not(#logo):hover {
         background-color: #FFC30D;
+    }
+
+    .nav-style{
+        height: 6rem;
     }
 
     .admission,

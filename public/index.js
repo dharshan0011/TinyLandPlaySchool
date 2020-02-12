@@ -1,8 +1,8 @@
 window.onscroll= function(){navScroll()};
 
 
-
 function navScroll(){
+    
     var nav = document.getElementById("nav-bar");
     if(window.pageYOffset > 800){
         nav.classList.add("sticky");
