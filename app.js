@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -31,7 +32,7 @@ app.post("/", function (req, res) {
     service: "gmail",
     auth: {
       user: "dharshan0012@gmail.com",
-      pass: "ilmmmSFFGH0011!"
+      pass: process.env.GPASS
     }
   });
   const mailOptions = {
