@@ -2,8 +2,6 @@ require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const https= require("https");
-const fs = require("fs");
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -11,14 +9,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
-
-// const key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
-// const cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');
-// const options = {
-//   key: key,
-//   cert: cert
-// };
-
 
 app.get("/", function (req, res) {
   res.render("home.ejs");
@@ -70,9 +60,6 @@ app.post("/", function (req, res) {
   });
 });
 
-// https.createServer(options,app).listen(process.env.PORT || 3000, function () {
-//   console.log("Listening to port 3000");
-// });
 app.listen(process.env.PORT || 3000, function () {
   console.log("Listening to port 3000");
 });
