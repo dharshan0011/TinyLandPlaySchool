@@ -27,6 +27,9 @@ app.get("/programs", function (req, res) {
 app.get("/about-us", (req, res) => {
   res.render("about.ejs");
 });
+app.get("/sitemap", (req,res)=>{
+  res.sendFile(__dirname+"/sitemap.xml");
+});
 app.post("/", function (req, res) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
