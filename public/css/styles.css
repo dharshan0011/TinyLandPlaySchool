@@ -5,7 +5,7 @@
 }
 
 #home {
-    background-image: url("/images/bg1.jpg");
+    background-image: url("/images/bg1.webp");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ nav ul li a:not(#logo):hover {
 #our-vision {
     text-align: center;
     padding: 160px 0 200px 0;
-    background-image: url("/images/bg2.png");
+    background-image: url("/images/bg2.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,7 +209,7 @@ nav ul li a:not(#logo):hover {
 #contact-us {
     text-align: center;
     padding: 8vh 8vh 10vh 8vh;
-    background-image: url("/images/bg3.png");
+    background-image: url("/images/bg3.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -402,7 +402,7 @@ input,select{
     }
 
     #our-vision {
-        background-image: url("/images/bg2-tablet.png")
+        background-image: url("/images/bg2-tablet.webp")
     }
 
     #features {
@@ -484,7 +484,7 @@ input,select{
     }
 
     #main {
-        background-image: url("/images/bg-mobile.jpg");
+        background-image: url("/images/bg-mobile.webp");
         background-position: center;
         background-size: cover;
         height: 86vh;
