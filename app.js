@@ -12,12 +12,12 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-const key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
-const cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');
-const options = {
-  key: key,
-  cert: cert
-};
+// const key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
+// const cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');
+// const options = {
+//   key: key,
+//   cert: cert
+// };
 
 
 app.get("/", function (req, res) {
@@ -70,9 +70,9 @@ app.post("/", function (req, res) {
   });
 });
 
-https.createServer(options,app).listen(process.env.PORT || 3000, function () {
-  console.log("Listening to port 3000");
-});
-// app.listen(process.env.PORT || 3000, function () {
+// https.createServer(options,app).listen(process.env.PORT || 3000, function () {
 //   console.log("Listening to port 3000");
 // });
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Listening to port 3000");
+});
