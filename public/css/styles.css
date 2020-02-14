@@ -172,7 +172,7 @@ nav ul li a:not(#logo):hover {
 /* ------------------------------features ----------------------*/
 
 #features {
-    background-color:  rgba(63, 178, 207, 62%);
+    background-color: #49A3B9;
     text-align: center;
     padding: 8vh 8vh 10vh 8vh;
 }
