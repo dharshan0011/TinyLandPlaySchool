@@ -47,13 +47,6 @@ nav ul li a:not(#logo):hover {
     color: white;
     text-decoration: none;
 }
-
-.sticky{
-    position:fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999999;
-}
 .nav-style{
     background-color:#CAC8C9;
     padding-top: 10px;
@@ -69,6 +62,12 @@ nav ul li a:not(#logo):hover {
 }
 .nav-style .admission{
         border: 3px solid white;
+}
+.sticky{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
 }
 
 .logo {
@@ -384,7 +383,8 @@ input,select{
 
 
 /* ---------------------tablet----------------------- */
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 641px) and (max-width: 1007px) {
+    
     nav ul li a {
         font-size: 0.8rem;
         width: 110px;
@@ -414,7 +414,14 @@ input,select{
 
 
 /* -------------------mobile-------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
+    #main {
+        background-image: url("/images/bg-mobile.webp");
+        background-position: center;
+        background-size: cover;
+        height: 86vh;
+        line-height: 85vh;
+    }
     .hidden {
         display: block;
     }
@@ -483,13 +490,6 @@ input,select{
         margin: 18px auto 0 auto;
     }
 
-    #main {
-        background-image: url("/images/bg-mobile.webp");
-        background-position: center;
-        background-size: cover;
-        height: 86vh;
-        line-height: 85vh;
-    }
 
     #main img {
         width: 90%;

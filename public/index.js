@@ -5,10 +5,10 @@ function navScroll(){
     
     var nav = document.getElementById("nav-bar");
     if(window.pageYOffset > 800){
-        nav.classList.add("sticky");
         nav.classList.add("nav-style");
+        nav.classList.add("sticky");
     } else {
-        nav.classList.remove("sticky");
         nav.classList.remove("nav-style");
+        nav.classList.remove("sticky");
     }
 }
