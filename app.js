@@ -82,7 +82,7 @@ app.post("/", function (req, res) {
       "<h1>Age: " + req.body.age + "</h1>" +
       "<h1>Program: " + req.body.program + "</h1>" ,
     auth: {
-      user: 'dharshan0012@gmail.com',
+      user: process.env.GMAIL_FROM,
       refreshToken: process.env.REFRESH_TOKEN,
       accessToken: process.env.ACCESS_TOKEN,
       expires: 1484314697598
