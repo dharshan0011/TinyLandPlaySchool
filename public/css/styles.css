@@ -362,6 +362,7 @@ input,select{
     transform:rotateY(180deg);
     background-color: dodgerblue;
     color:white;
+    font-weight: 600;
     padding: 20px 10px;
 }
 
