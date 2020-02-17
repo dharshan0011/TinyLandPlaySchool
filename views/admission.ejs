@@ -4,6 +4,12 @@
         background-color: rgba(63, 178, 207, 62%);
     }
 
+    li a[href="/admission"] {
+        background-color: #FFC30D;
+        border:none;
+        color: white;
+    }
+
     #home {
         background-image: url("/images/bg-ad.webp");
         background-position: top;
@@ -13,16 +19,6 @@
 
     footer {
         background-color: #FFC30D;
-    }
-
-    nav ul li a:not(#logo):hover {
-        background-color: #FFC30D;
-        color: white;
-        text-decoration: none;
-    }
-
-    .admission:hover {
-        border: 3px solid #FFC30D;
     }
 
     @media only screen and (max-width: 600px) {
@@ -64,12 +60,12 @@
         <div class="alert alert-success" role="alert">
             <h5>
                 Your details submitted successfully!
-            </h5> 
+            </h5>
             <p>
-               Thank you, we'll contact you soon.
+                Thank you, we'll contact you soon.
             </p>
-          </div>
-          <%}%>
+        </div>
+        <%}%>
         <button type="submit">Submit</button>
         
     </form>

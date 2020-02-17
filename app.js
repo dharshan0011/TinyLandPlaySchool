@@ -80,7 +80,7 @@ app.post("/", function (req, res) {
       "<h1>Email: " + req.body.email + "</h1>" +
       "<h1>Mobile: " + req.body.mob + "</h1>" +
       "<h1>Age: " + req.body.age + "</h1>" +
-      "<h1>Program: " + req.body.program + "</h1>" ,
+      "<h1>Program: " + req.body.program + "</h1>",
     auth: {
       user: process.env.GMAIL_FROM,
       refreshToken: process.env.REFRESH_TOKEN,

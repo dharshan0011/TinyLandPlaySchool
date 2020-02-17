@@ -63,6 +63,9 @@ nav ul li a:not(#logo):hover {
 .nav-style .admission{
         border: 3px solid white;
 }
+.nav-style .admission:hover{
+    border: none;
+}
 .sticky{
     position:fixed;
     top: 0;
@@ -95,8 +98,6 @@ nav ul li a:not(#logo):hover {
     float: left;
     margin: 3px 0 0 8px;
 }
-
-
 
 
 /* ---------------main---------------------*/
@@ -148,7 +149,7 @@ nav ul li a:not(#logo):hover {
 }
 
 #our-vision h1 span {
-    color: #FFC30D;
+    color:#FFC30D ;
 }
 
 #quote {
